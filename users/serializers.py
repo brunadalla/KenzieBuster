@@ -30,7 +30,7 @@ class UserSerializer(serializers.Serializer):
     birthdate = serializers.DateField(allow_null=True, default=None)
     is_employee = serializers.BooleanField(allow_null=True, default=False)
 
-    def create(self, validated_data: dict):
+    def create(self, validated_data: dict) -> User:
         if validated_data["is_employee"]:
             user = User.objects.create_superuser(**validated_data)
             return user

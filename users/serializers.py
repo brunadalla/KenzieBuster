@@ -5,8 +5,8 @@ from users.models import User
 
 class UserSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
-    is_superuser = serializers.BooleanField(read_only = True)
-    password = serializers.CharField(write_only = True)
+    is_superuser = serializers.BooleanField(read_only=True)
+    password = serializers.CharField(write_only=True)
 
     username = serializers.CharField(
         max_length=20,
@@ -37,3 +37,6 @@ class UserSerializer(serializers.Serializer):
         else:
             user = User.objects.create_user(**validated_data)
             return user
+
+
+

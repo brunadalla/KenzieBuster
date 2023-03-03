@@ -1,25 +1,10 @@
-# M5 - Kenzie Buster
+# Kenzie Buster
+
+Projeto realizado no quinto módulo do curso de Formação em Desenvolvimento Full Stack da Kenzie Academy Brasil.
+
+O objetivo desse projeto era desenvolver um uma API que gerencia filmes e compras de filmes.
 
 ## Instalação dos pacotes de teste
-
-- Verifique se os pacotes `pytest` e/ou `pytest-testdox` estão instalados globalmente em seu sistema:
-```shell
-pip list
-```
-- Caso seja listado o `pytest` e/ou `pytest-testdox` e/ou `pytest-django` em seu ambiente global, utilize os seguintes comando para desinstalá-los globalmente:
-```shell
-pip uninstall pytest
-```
-
-```shell
-pip uninstall pytest-testdox
-```
-
-```shell
-pip uninstall pytest-django
-```
-
-A partir disso, prossiga com os passos:
 
 1. Crie seu ambiente virtual:
 ```bash
@@ -45,30 +30,4 @@ pip install pytest-testdox pytest-django
 4. Agora é só rodar os testes no diretório principal do projeto:
 ```shell
 pytest --testdox -vvs
-```
-
-
-
-## Rodando os testes de cada tarefa isoladamente
-
-Ao fim de cada tarefa será possível executar uma suite de testes direcionada àquela tarefa específica. Lembre-se de sempre estar com o **virtual enviroment (venv) ativado**.
-
-- Rodando testes da Tarefa 1:
-```python
-pytest --testdox -vvs tests/tarefas/t1/
-```
-
-- Rodando testes da Tarefa 2:
-```python
-pytest --testdox -vvs tests/tarefas/t2/
-```
-
-- Rodando testes da Tarefa 3:
-```python
-pytest --testdox -vvs tests/tarefas/t3/
-```
-
-- Rodando testes da Tarefa 4:
-```python
-pytest --testdox -vvs tests/tarefas/t4/
 ```
